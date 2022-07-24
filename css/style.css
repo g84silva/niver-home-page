@@ -1,0 +1,31 @@
+
+body,html {
+  height: 100%;
+  margin: 0;
+  }
+  
+.bg {
+  background-image: url("image/temaPainel.jpg");
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+li {
+    display: inline;
+    float: left;
+  }
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+
+h1 {
+    text-align: center;
+  }
