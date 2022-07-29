@@ -1,31 +1,154 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body,html {
   height: 100%;
-  margin: 0;
-  }
-  
+}
+
 .bg {
-  background-image: url("image/temaPainel.jpg");
+  background-image: url("../image/temaPainel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.bgNoHome {
+      /* The image used */
+      background-image: url("../image/temaPainel.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+  
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+  
+      /* Full height */
+      height: 100%;
+      z-index: -1;
+  
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    /* background-image: url("../image/temaPainel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    filter: blur(8px);
+    -webkit-filter: blur(8px); */
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
 li {
-    display: inline;
-    float: left;
-  }
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
 
 a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-  }
+  display: block;
+  padding: 8px;
+
+  text-decoration: none;
+ }
 
 h1 {
-    text-align: center;
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  margin-inline-start: 12px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-family: 'Rochester', cursive;
+  color: #ff95c9;
+  text-align: justify;
+  margin-inline-start: 12px;
+  margin-inline-end: 12px;
+  text-indent: 2em;
+}
+
+img {
+  width: 400px;
+  padding: 14px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contentTema div {
+  margin-bottom: 10px;
+}
+
+div.titleWrapper{
+  margin-top: 3%;
+}
+
+.contentTema {
+  margin: 0 10px 10px 10px;
+  background-color: #ffffff;
+  color: black;
+  font-weight: bolder;
+}
+
+div.content {
+  margin: 10px;
+  background-color: #ffffff;
+  line-height: 1.5;
+  color: black;
+  font-weight: bolder;
+}
+
+@media (max-width: 600px) {
+  ul {
+    display: inline-grid;
   }
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+
+.wrapper .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+}
