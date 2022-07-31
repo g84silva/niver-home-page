@@ -50,7 +50,15 @@ body,html {
     -webkit-filter: blur(8px); */
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 32vh;
+}
+
 ul {
+  display: flex;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -64,7 +72,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: #ff95c9;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -76,14 +84,34 @@ li a:hover {
 }
 
 a {
-  display: block;
+  display: inline;
   padding: 8px;
 
   text-decoration: none;
  }
 
 h1 {
+  font-family: 'Rochester', cursive;
+  color: #ff95c9;
   text-align: center;
+  border: #fd4ba2;
+  font-size: ;
+}
+
+.titleIndex {
+  text-align: center;
+  text-indent: inherit;
+  font-size: 50px;
+  font-weight: bold;
+  border: #fd4ba2;
+}
+
+.paragIndex {
+  text-align: center;
+  text-indent: inherit;
+  font-size: 40px;
+  font-weight: bold;
+  border: #fd4ba2;
 }
 
 h2 {
@@ -125,19 +153,26 @@ div.titleWrapper{
   background-color: #ffffff;
   color: black;
   font-weight: bolder;
+  line-height: 1.5;
 }
 
 div.content {
   margin: 10px;
   background-color: #ffffff;
+  color: black;
+  font-weight: bolder;
   line-height: 1.5;
+}
+
+div.contentIndex {
+  margin: 10px;
   color: black;
   font-weight: bolder;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) { */
   ul {
-    display: inline-grid;
+    display: flex;
   }
 
 .wrapper {
@@ -145,10 +180,17 @@ div.content {
   grid-template-rows: 1fr 5fr;
 }
 
-.wrapper .content {
+.wrapperIndex {
+  display: grid;
+  grid-template-rows: 5fr;
+
+  align-self: center;
+}
+
+.wrapper .wrapperIndex .content .contentIndex {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-}
+/* } */
