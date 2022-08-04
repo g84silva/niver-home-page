@@ -5,13 +5,13 @@
   box-sizing: border-box;
 }
 
-body,html {
+body, html {
   height: 100%;
 }
 
 .bg {
   background-image: url("../image/temaPainel.jpg");
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -28,12 +28,10 @@ body,html {
       position: relative;
   
       /* Add the blur effect */
-      filter: blur(8px);
-      -webkit-filter: blur(8px);
+      /* filter: blur(8px); */
   
       /* Full height */
       height: 100%;
-      z-index: -1;
   
       /* Center and scale the image nicely */
       background-position: center;
@@ -50,10 +48,16 @@ body,html {
     -webkit-filter: blur(8px); */
 }
 
+.containerIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7vh 93vh;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10vh 32vh;
+  grid-template-rows: 7vh 93vh;
 }
 
 ul {
@@ -83,22 +87,21 @@ li a:hover {
   background-color: #111;
 }
 
-a {
+/* a {
   display: inline;
   padding: 8px;
 
   text-decoration: none;
- }
+ } */
 
 h1 {
   font-family: 'Rochester', cursive;
   color: #ff95c9;
   text-align: center;
   border: #fd4ba2;
-  font-size: ;
 }
 
-.titleIndex {
+.contentIndex h1 {
   text-align: center;
   text-indent: inherit;
   font-size: 50px;
@@ -106,7 +109,7 @@ h1 {
   border: #fd4ba2;
 }
 
-.paragIndex {
+.contentIndex p {
   text-align: center;
   text-indent: inherit;
   font-size: 40px;
@@ -119,6 +122,9 @@ h2 {
 }
 
 h3 {
+  font-family: 'Rochester', cursive;
+  color: #ff95c9;
+  border: #fd4ba2;
   margin-inline-start: 12px;
   margin-bottom: 5px;
 }
@@ -149,23 +155,20 @@ div.titleWrapper{
 }
 
 .contentTema {
-  margin: 0 10px 10px 10px;
-  background-color: #ffffff;
   color: black;
-  font-weight: bolder;
   line-height: 1.5;
 }
 
 div.content {
   margin: 10px;
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
   color: black;
-  font-weight: bolder;
   line-height: 1.5;
 }
 
 div.contentIndex {
   margin: 10px;
+  padding-top: 12vh;
   color: black;
   font-weight: bolder;
 }
@@ -177,14 +180,10 @@ div.contentIndex {
 
 .wrapper {
   display: grid;
-  grid-template-rows: 1fr 5fr;
 }
 
 .wrapperIndex {
   display: grid;
-  grid-template-rows: 5fr;
-
-  align-self: center;
 }
 
 .wrapper .wrapperIndex .content .contentIndex {
