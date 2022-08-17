@@ -1,23 +1,34 @@
-import { post } from "axios";
-
 const button = document.getElementById("button");
 const input = document.getElementById("nome");
 const textarea = document.getElementById("msg");
+
+const BASE_URL = "https://aniver-back.herokuapp.com";
 
 button.onclick = function () {
   alert("button clicked");
   salvarMensagem();
 };
 
-function salvarMensagem() {
-  const mensagem = {
-    nameOrEmail: input.value,
-    texto: textarea.value,
-  };
-  post("asdasdasd/mensagem", mensagem)
-    .then((response) => {
-      console.log(response.data);
-      alert(input.value + " Obrigado pela sua mensagem.");
-    })
-    .cath((err) => console.error(err));
-}
+const obterTodasMensagens = async () => {
+  try {
+    const response = await axios.get(`${BASE_URL}/mensagens`);
+    const todoItems = response.data;
+    console.log(`GET: Here's the list of todos`, todoItems);
+    return todoItems;
+  } catch (errors) {
+    console.error(errors);
+  }
+};
+
+const salvarMensagem = async () => {
+  try {
+    const mensagem = {
+      nomeOrEmail: input.value,
+      texto: textarea.value,
+    };
+    const response = await axios.post(`${BASE_URL}/mensagens`, mensagem);
+    alert(`Obrigado pela mensagem, ${input.value}.`);
+  } catch (errors) {
+    console.error(errors);
+  }
+};
