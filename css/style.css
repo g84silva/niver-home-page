@@ -1,11 +1,12 @@
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 
@@ -19,26 +20,26 @@ body, html {
 }
 
 .bgNoHome {
-      /* The image used */
-      background-image: url("../image/temaPainel.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      position: relative;
-  
-      /* Add the blur effect */
-      /* filter: blur(8px); */
-  
-      /* Full height */
-      height: 100%;
-  
-      /* Center and scale the image nicely */
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+  /* The image used */
+  background-image: url("../image/temaPainel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 
-    /* background-image: url("../image/temaPainel.jpg");
+  /* Add the blur effect */
+  /* filter: blur(8px); */
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* background-image: url("../image/temaPainel.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,7 +112,7 @@ li a:hover {
  } */
 
 h1 {
-  font-family: 'Rochester', cursive;
+  font-family: "Rochester", cursive;
   color: #ff95c9;
   text-align: center;
   border: #fd4ba2;
@@ -138,7 +139,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Rochester', cursive;
+  font-family: "Rochester", cursive;
   color: #ff95c9;
   border: #fd4ba2;
   margin-inline-start: 12px;
@@ -146,7 +147,7 @@ h3 {
 }
 
 p {
-  font-family: 'Rochester', cursive;
+  font-family: "Rochester", cursive;
   color: white;
   text-align: justify;
   margin-inline-start: 12px;
@@ -156,12 +157,12 @@ p {
 }
 
 p > a {
-  font-family: 'Rochester', cursive;
+  font-family: "Rochester", cursive;
   color: #ff95c9;
 }
 
 .parag p {
-  font-family: 'Rochester', cursive;
+  font-family: "Rochester", cursive;
   color: white;
   text-align: justify;
   margin-inline-start: 12px;
@@ -169,19 +170,20 @@ p > a {
   text-indent: inherit;
 }
 
+.img-container {
+}
+
 img {
-  width: 400px;
-  padding: 14px;
+  width: 350px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .contentTema div {
   margin-bottom: 10px;
 }
 
-div.titleWrapper{
+div.titleWrapper {
   margin-top: 3%;
 }
 
@@ -243,20 +245,20 @@ input {
 
 .button {
   background-color: #fd4ba2;
-  font-family: 'Rochester', cursive;
+  font-family: "Rochester", cursive;
   color: white;
   width: 100%;
 }
 
 label {
-  font-family: 'Rochester', cursive;
+  font-family: "Rochester", cursive;
   color: white;
 }
 
 /* @media (max-width: 600px) { */
-  ul {
-    display: flex;
-  }
+ul {
+  display: flex;
+}
 
 .wrapper {
   display: grid;
