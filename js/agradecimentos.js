@@ -5,7 +5,6 @@ const textarea = document.getElementById("msg");
 const BASE_URL = "https://aniver-back.herokuapp.com";
 
 button.onclick = function () {
-  alert("button clicked");
   salvarMensagem();
 };
 
