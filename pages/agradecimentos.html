@@ -3,6 +3,7 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -64,14 +65,14 @@
                 gostado de tudo!
               </p>
             </div>
-            <div>
+            <div class="img-container">
               <img src="../image/nossaFamilia.jpeg" alt="Nossa família" />
             </div>
             <div style="text-align: center">
               <h3>Gostaria de deixar sua mensagem?</h3>
             </div>
             <div class="formContainer">
-              <form id="msgUser" action="">
+              <form id="msgUser">
                 <label for="nome">Nome:</label><br />
                 <input
                   type="text"
@@ -88,7 +89,12 @@
                   required
                 ></textarea>
                 <br />
-                <input class="button" type="submit" value="Enviar" />
+                <input
+                  id="button"
+                  class="button"
+                  type="button"
+                  value="Enviar"
+                />
               </form>
             </div>
           </div>
@@ -96,4 +102,5 @@
       </main>
     </div>
   </body>
+  <script src="../js/agradecimentos.js"></script>
 </html>
