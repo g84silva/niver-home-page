@@ -50,12 +50,18 @@ body, html {
 
 .bg > div {
   margin: 10px;
+  width: 70%;
   position: absolute;
   top: 80%;
   left: 49%;
   transform: translate(-50%, -50%);
   font-weight: bolder;
   font-size: x-large;
+  text-align: center;
+}
+
+.bg > div > label {
+  color: #ff95c9;
 }
 
 .containerIndex {
@@ -124,7 +130,7 @@ h1 {
   text-indent: inherit;
   font-size: 40px;
   font-weight: bold;
-  border: #fd4ba2;
+  color: #ff95c9;
 }
 
 h2 {
@@ -141,7 +147,7 @@ h3 {
 
 p {
   font-family: 'Rochester', cursive;
-  color: #ff95c9;
+  color: white;
   text-align: justify;
   margin-inline-start: 12px;
   margin-inline-end: 12px;
@@ -156,7 +162,7 @@ p > a {
 
 .parag p {
   font-family: 'Rochester', cursive;
-  color: #ff95c9;
+  color: white;
   text-align: justify;
   margin-inline-start: 12px;
   margin-inline-end: 12px;
@@ -192,6 +198,14 @@ div.content {
   padding-block-end: 10px;
 }
 
+div.contentAgradecimento {
+  /* margin: 10px; */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+  line-height: 1.5;
+  padding-block-end: 10px;
+}
+
 div.contentIndex {
   margin: 10px;
   position: absolute;
@@ -200,6 +214,7 @@ div.contentIndex {
   transform: translate(-50%, -50%);
   color: black;
   font-weight: bolder;
+  width: 100%;
 }
 
 textarea {
@@ -230,12 +245,12 @@ input {
   background-color: #fd4ba2;
   font-family: 'Rochester', cursive;
   color: white;
-  margin-inline-start: 40%;
+  width: 100%;
 }
 
 label {
   font-family: 'Rochester', cursive;
-  color: #ff95c9;
+  color: white;
 }
 
 /* @media (max-width: 600px) { */
