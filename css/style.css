@@ -68,13 +68,13 @@ html {
 .containerIndex {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 5vh 95vh;
+  grid-template-rows: 6vh 94vh;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 5vh 95vh;
+  grid-template-rows: 6vh 94vh;
 }
 
 ul {

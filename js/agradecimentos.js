@@ -1,6 +1,7 @@
 const button = document.getElementById("button");
 const input = document.getElementById("nome");
 const textarea = document.getElementById("msg");
+const form = document.getElementById("msgUser");
 
 const BASE_URL = "https://aniver-back.herokuapp.com";
 
@@ -27,6 +28,7 @@ const salvarMensagem = async () => {
     };
     const response = await axios.post(`${BASE_URL}/mensagens`, mensagem);
     alert(`Obrigado pela mensagem, ${input.value}.`);
+    form.reset();
   } catch (errors) {
     console.error(errors);
   }
