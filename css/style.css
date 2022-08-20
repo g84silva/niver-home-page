@@ -68,7 +68,16 @@ body {
 .bg > div > label {
   color: #ff95c9;
 }
+.bg > div > div.content > ul {
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: normal;
+  font-size: 0.6em;
+}
 
+.bg > div > div.content > ul > li > p {
+    margin-inline-start: 2em;
+    text-indent: 0em;
+}
 .containerIndex {
   display: grid;
   grid-template-columns: 1fr;
@@ -278,9 +287,6 @@ ul {
   justify-content: center;
 }
 
-.listaMensagens {
-  display: flex;
-  flex-direction: columns; !important
-}
+
 
 /* } */

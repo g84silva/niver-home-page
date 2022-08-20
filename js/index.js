@@ -10,6 +10,7 @@ const obterTodasMensagens = async () => {
     mensagens.forEach((msg) => {
       console.log(msg.texto);
       let item = document.createElement("li");
+      item.innerHTML = `<h3>${msg.nomeOrEmail} comentou:</h3>`;
       item.innerHTML = `<p>${msg.texto}</p>`;
       listaMensagens.appendChild(item);
     });
