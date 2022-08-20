@@ -1,4 +1,4 @@
-const buttonAgradecimento = document.getElementById("buttonAgradecimento");
+const buttonAgradecimento = document.getElementById("button");
 const input = document.getElementById("nome");
 const textarea = document.getElementById("msg");
 const form = document.getElementById("msgUser");
@@ -18,6 +18,7 @@ const salvarMensagem = async () => {
     const response = await axios.post(`${BASE_URL}/mensagens`, mensagem);
     alert(`Obrigado pela mensagem, ${input.value}.`);
     form.reset();
+    location.href = "./../index.html";
   } catch (errors) {
     console.error(errors);
   }
