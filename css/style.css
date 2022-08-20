@@ -69,15 +69,29 @@ body {
   color: #ff95c9;
 }
 .bg > div > div.content > ul {
+  display: block;
+  height: 100px;
+  overflow-y: auto;
   background-color: rgba(0, 0, 0, 0);
   font-weight: normal;
   font-size: 0.6em;
+}
+
+.bg > div > div.content > ul > li {
+  float: none;
 }
 
 .bg > div > div.content > ul > li > p {
     margin-inline-start: 2em;
     text-indent: 0em;
 }
+
+.bg > div > div.content > ul > li > h3 {
+  text-align: initial;
+  font-weight: normal;
+  margin-inline-start: 10px;
+}
+
 .containerIndex {
   display: grid;
   grid-template-columns: 1fr;
