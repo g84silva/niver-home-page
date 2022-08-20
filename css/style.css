@@ -9,10 +9,10 @@ body,
 html {
   height: 100%;
 }
-
+/* 
 body {
   overflow: hidden;
-}
+} */
 
 .bg {
   background-image: url("../image/temaPainel.jpg");
@@ -276,6 +276,11 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.listaMensagens {
+  display: flex;
+  flex-direction: columns; !important
 }
 
 /* } */
