@@ -10,7 +10,9 @@ const obterTodasMensagens = async () => {
     mensagens.forEach((msg) => {
       console.log(msg.texto);
       let item = document.createElement("li");
-      item.innerHTML = `<h3>${msg.nomeOrEmail} comentou:</h3><p>${msg.texto}</p>`;
+      item.innerHTML = `<h3>${msg.nomeOrEmail} as ${
+        msg.dataMensagem.split("T")[1]
+      } comentou:</h3><p>${msg.texto}</p>`;
       listaMensagens.appendChild(item);
     });
   } catch (errors) {
