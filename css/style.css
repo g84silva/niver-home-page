@@ -75,6 +75,8 @@ body {
   background-color: rgba(0, 0, 0, 0);
   font-weight: normal;
   font-size: 0.6em;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .bg > div > div.content > ul > li {
@@ -82,8 +84,8 @@ body {
 }
 
 .bg > div > div.content > ul > li > p {
-    margin-inline-start: 2em;
-    text-indent: 0em;
+  margin-inline-start: 2em;
+  text-indent: 0em;
 }
 
 .bg > div > div.content > ul > li > h3 {
@@ -297,7 +299,5 @@ ul {
   align-items: center;
   justify-content: center;
 }
-
-
 
 /* } */
