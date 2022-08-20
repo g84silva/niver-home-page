@@ -9,10 +9,10 @@ body,
 html {
   height: 100%;
 }
-/* 
+
 body {
   overflow: hidden;
-} */
+}
 
 .bg {
   background-image: url("../image/temaPainel.jpg");
@@ -55,10 +55,10 @@ body {
 
 .bg > div {
   margin: 10px;
-  width: 70%;
+  width: 90%;
   position: absolute;
-  top: 80%;
-  left: 49%;
+  top: 75%;
+  left: 48%;
   transform: translate(-50%, -50%);
   font-weight: bolder;
   font-size: x-large;
@@ -195,9 +195,6 @@ p > a {
   margin-inline-start: 12px;
   margin-inline-end: 12px;
   text-indent: inherit;
-}
-
-.img-container {
 }
 
 img {
