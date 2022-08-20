@@ -3,6 +3,7 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,14 +41,10 @@
           <div>
             <label for="msgUser">Mensagens dos convidados:</label><br />
             <!-- <output type="text" id="msgUser" name="msgUser"></output> <br /> -->
-            <ul id="listaMensagens">
-              <li>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
-                delectus voluptatibus architecto nobis molestias dolorum magni
-                corporis distinctio repudiandae consequatur, voluptas accusamus.
-                Provident aliquam molestiae esse ea sint velit veritatis!
-              </li>
-            </ul>
+            <ul
+              id="listaMensagens"
+              style="display: flex; flex-direction: column"
+            ></ul>
           </div>
         </div>
       </main>
